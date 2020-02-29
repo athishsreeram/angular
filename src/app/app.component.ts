@@ -15,6 +15,7 @@ export class AppComponent {
   items = ["a","b"];
 
   emp: Employee[];
+  err: String;
 
   constructor(private es:EmployeeserviceService){
 
@@ -22,7 +23,8 @@ export class AppComponent {
 
   ngOnInit(): void {
     //this.emp = this.es.getEmployee();    
-    this.es.getEmployeeHttp().subscribe(data => this.emp=data);
+    this.es.getEmployeeHttp().subscribe(data => this.emp=data,
+                                        error => this.err = error);
   }
  
 }
