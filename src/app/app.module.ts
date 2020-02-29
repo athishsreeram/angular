@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule }   from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { CounterComponent } from './counter/counter.component';
@@ -12,7 +12,8 @@ import { CounterComponent } from './counter/counter.component';
   declarations: [
     AppComponent,
     TestComponent,
-    CounterComponent
+    CounterComponent,
+    routingComponents,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<p>
+  department works!
+</p>
+
+<div *ngFor="let item of items">
+  {{item}}
+</div>
+
+<h1>Employee</h1>
+
+<div *ngFor="let e of emp">
+  {{e.id}} -  {{e.name}}
+</div>
+
+<h1>Err  {{err}}</h1>
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock><div>asfaefafaefaefaf</div></ng-template>
+<ng-template #elseBlock><div>else</div></ng-template>
+
+
